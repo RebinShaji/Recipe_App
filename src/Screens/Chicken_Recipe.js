@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import { StyleSheet, Text, TextInput, View, Image,FlatList, SafeAreaView, Dimensions } from "react-native";
+import { StyleSheet, Text, TextInput, View, Image, FlatList, SafeAreaView, Dimensions } from "react-native";
 
 const Chicken_Recipe= () => {
     const[recipe, setRecipe] = useState([]);

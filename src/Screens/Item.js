@@ -6,6 +6,7 @@ const Item= () => {
     const[searchString,setSearchString] = useState('');
     const[filteredRecipe,setFilteredRecipe] = useState([]);
 
+    useEffect(()=>{
 
     
     const getData=async()=>{
@@ -32,7 +33,7 @@ const Item= () => {
         };
         getData();
         return()=>{}
-    ,[]);
+    },[]);
 
     useEffect(()=>{
         let filteredRecipe = recipe.hits;
